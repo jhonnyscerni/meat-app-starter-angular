@@ -1,3 +1,4 @@
+import { OrderComponent } from './order/order.component';
 import { Routes } from "@angular/router";
 
 import { HomeComponent } from './home/home.component';
@@ -11,6 +12,7 @@ export const ROUTES: Routes = [
   {path: '', component: HomeComponent},
   {path: 'about', component: AboutComponent},
   {path: 'restaurants', component: RestaurantsComponent},
+  {path: 'order', component: OrderComponent},
   {path: 'restaurants/:id', component: RestaurantDetailComponent,
     children: [
       {path: '', redirectTo: 'menu', pathMatch: 'full'},
